@@ -3,6 +3,11 @@ import {Text, View} from 'react-native';
 import {styles} from '../theme/appTheme';
 import {StackScreenProps} from '@react-navigation/stack';
 
+interface RoutesParams {
+  id: number;
+  name: string;
+}
+
 interface Props extends StackScreenProps<any, any> {}
 
 export const PersonScreen = ({route, navigation}: Props) => {
@@ -10,10 +15,11 @@ export const PersonScreen = ({route, navigation}: Props) => {
   // console.log(JSON.stringify(props, null, 3));
   // How get params?
   // Dirty way:
-  const params = route.params;
+  const params = route.params as RoutesParams;
+
   useEffect(() => {
     navigation.setOptions({
-      title: params!.name,
+      title: params.name,
     });
   }, []);
   // Clear way:

@@ -22,7 +22,16 @@ export const PageOneScreen = ({navigation}: Props) => {
             name: 'Pedro',
           })
         }>
-        <Text> Pedro</Text>
+        <Text>Pedro</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() =>
+          navigation.navigate('PersonScreen', {
+            id: 2,
+            name: 'Pablo',
+          })
+        }>
+        <Text>Pablo</Text>
       </TouchableOpacity>
     </View>
   );
