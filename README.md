@@ -76,3 +76,5 @@ export const PageTwoScreen = () => {
   );
 };
 ```
+
+# How can I send Args?

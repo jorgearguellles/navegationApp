@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {PageOneScreen} from '../screens/PageOneScreen';
 import {PageTwoScreen} from '../screens/pageTwoScreen';
 import {PageThreeScreen} from '../screens/PageThreeScreen';
+import {PersonScreen} from '../screens/PersonScreen';
 
 const Stack = createStackNavigator();
 
@@ -34,6 +35,11 @@ export const StackNavigator = () => {
         name="PageThreeScreen"
         options={{title: 'Page 3'}}
         component={PageThreeScreen}
+      />
+      <Stack.Screen
+        name="PersonScreen"
+        options={{title: 'Page Person'}}
+        component={PersonScreen}
       />
     </Stack.Navigator>
   );
