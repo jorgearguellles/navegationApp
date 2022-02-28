@@ -9,12 +9,9 @@ const Stack = createStackNavigator();
 export const StackNavigator = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Title - PageOneScreen" component={PageOneScreen} />
-      <Stack.Screen name="Title - PageTwoScreen" component={PageTwoScreen} />
-      <Stack.Screen
-        name="Title - PageThreeScreen"
-        component={PageThreeScreen}
-      />
+      <Stack.Screen name="PageOneScreen" component={PageOneScreen} />
+      <Stack.Screen name="PageTwoScreen" component={PageTwoScreen} />
+      <Stack.Screen name="PageThreeScreen" component={PageThreeScreen} />
     </Stack.Navigator>
   );
 };
